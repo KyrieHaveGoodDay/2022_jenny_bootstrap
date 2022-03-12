@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #994533;
+}
+/* iphone6 4.7吋 = 375px */
+/* iphone6 plus = 414px */
+@media screen and (max-width:414px){
+    .container{
+        padding-right:0 ;
+        padding-left: 0 ;
+    }
+    /* .row{
+        margin: 0;
+    } */
+}
+
+.product > div{
+    height: 300px;
+}
+/* nth */
+// @for $i from 1 to 4 {
+//     #product > div:nth-child(1){
+//         background-image: url(./img/product$i.jpg);
+//     }
+// }
+
+#product > div:nth-child(1){
+    background-image: url(./img/product1.jpg);
+}
+#product > div:nth-child(2){
+    background-image: url(./img/product2.jpg);
+}
+#product > div:nth-child(3){
+    background-image: url(./img/product3.jpg);
+}
+#product > div:nth-child(4){
+    background-image: url(./img/product4.jpg);
+}
