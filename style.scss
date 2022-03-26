@@ -1,29 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     background: #994533;
 }
 /* iphone6 4.7吋 = 375px */
 /* iphone6 plus = 414px */
-@media screen and (max-width:414px){
-    .container{
-        padding-right:0 ;
-        padding-left: 0 ;
+@media screen and (max-width: 414px) {
+    .container {
+        padding-right: 0;
+        padding-left: 0;
     }
     /* .row{
         margin: 0;
     } */
 }
 
-.product > div{
+.product > div {
     height: 300px;
 }
 /* nth */
 // @for $i from 1 to 4 {
-//     #product > div:nth-child(1){
+//     #product > div:nth-child(1) {
 //         background-image: url(./img/product$i.jpg);
 //     }
 // }
@@ -39,4 +39,31 @@ body{
 }
 #product > div:nth-child(4){
     background-image: url(./img/product4.jpg);
+}
+
+.col-lg-6{
+    max-width: 48% ;
+    @media screen and(max-width:768px){
+    max-width: 100% ;
+        
+    }
+}
+.product{
+    justify-content: center;
+    // background: #fff;
+}
+.container{
+    background: #fff;
+    // display: block;
+}
+footer{
+    // padding: 100px;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        margin: 0;
+    }
 }
